@@ -9,6 +9,9 @@ Joel Tay
 
 ![image 2](img2.png)
 
+## Pitch Deck
+Our pitch deck can be found at `pitch_deck.pdf`.
+
 ## Running the code
 The code consists of two applications:
 - Native Android App for Client
