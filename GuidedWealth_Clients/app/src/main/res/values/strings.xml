@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Harry Winners Client App</string>
+    <string name="title_home">Home</string>
+    <string name="title_recommend">Recommendations</string>
+    <string name="title_learn">Learn</string>
+    <string name="whatsapp_icon">whatsapp icon</string>
+    <string name="sms_icon">SMS icon</string>
+    <string name="call_icon">whatsapp icon</string>
+    <string name="banker_profile_photo">Banker profile photo</string>
+    <string name="gold_tier">Gold Tier</string>
+    <string name="platinum_tier">Platinum Tier</string>
+    <string name="goals">Goals</string>
+    <string name="welcomeMessage">Welcome!</string>
+    <string name="bankerName">Name: %1$s</string>
+    <string name="bankerEmail">Email: %1$s</string>
+    <string name="bankerOffice">Office: %1$s</string>
+    <string name="bankerPhone">Phone: %1$s</string>
+    <string name="bankerTelegram">Telegram: %1$s</string>
+
+    <string-array name="popupHoldingsBuySellArr">
+        <item>Buy</item>
+        <item>Sell</item>
+    </string-array>
+
+    <string-array name="popupHoldingsManagedArr">
+        <item>External</item>
+        <item>Managed</item>
+    </string-array>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp"
+    android:background="@color/ct_blue">
+
+    <TextView
+        android:id="@+id/popGoalTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-thin"
+        android:singleLine="true"
+        android:text="New Goal"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/popupGoalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popGoalTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_background_blue"
+        android:gravity="center"
+        android:hint="Goal Name"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey" />
+
+    <DatePicker
+        android:id="@+id/popupGoalTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popupGoalName"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_background_blue"
+        android:calendarTextColor="@color/grey"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:backgroundTint="@color/white" />
+
+    <EditText
+        android:id="@+id/popupGoalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupGoalTime"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_background_blue"
+        android:gravity="center"
+        android:hint="Goal Amount in Dollars"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"/>
+
+    <EditText
+        android:id="@+id/popupGoalCurrAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupGoalAmount"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_background_blue"
+        android:gravity="center"
+        android:hint="Current Amount in Dollars"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"/>
+
+</RelativeLayout>

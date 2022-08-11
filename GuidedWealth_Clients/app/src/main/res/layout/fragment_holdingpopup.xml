@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp"
+    android:background="@color/ct_blue">
+
+    <TextView
+        android:id="@+id/popupHoldingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-thin"
+        android:singleLine="true"
+        android:text="Update your portfolio"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/popupHoldingSymbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupHoldingTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_background_blue"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        android:gravity="center"
+        android:hint="Symbol" />
+
+    <EditText
+        android:id="@+id/popupHoldingDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupHoldingSymbol"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_background_blue"
+        android:gravity="center"
+        android:hint="Description"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey" />
+
+    <Spinner
+        android:id="@+id/popupHoldingBuySell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popupHoldingDesc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:backgroundTint="@color/grey"
+        android:entries="@array/popupHoldingsBuySellArr"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/popupHoldingAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupHoldingBuySell"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_background_blue"
+        android:gravity="center"
+        android:hint="Quantity"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey" />
+
+</RelativeLayout>

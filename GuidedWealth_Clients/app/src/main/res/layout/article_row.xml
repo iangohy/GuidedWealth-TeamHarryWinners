@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/rounded_background_white"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/articlePhoto"
+        android:layout_width="47dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/articleDate"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/articleNameRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Mark Tan \n Vice President"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/articlePhoto"
+        app:layout_constraintStart_toEndOf="@+id/articlePhoto"
+        app:layout_constraintTop_toTopOf="@+id/articlePhoto" />
+
+    <TextView
+        android:id="@+id/articleKarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="8995 Karma Points"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/articlePhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/articlePhoto"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <TextView
+        android:id="@+id/articleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Financial literacy and the need for financial education"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/articleDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="12 Aug 2022"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/articleTitle" />
+
+    <TextView
+        android:id="@+id/articleViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="664 views"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/articleDate"
+        app:layout_constraintStart_toEndOf="@+id/articleUpvotes"
+        app:layout_constraintTop_toBottomOf="@+id/articleTitle" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/articlePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/articleDate"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/articleUpvotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="12 upvotes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/articleTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

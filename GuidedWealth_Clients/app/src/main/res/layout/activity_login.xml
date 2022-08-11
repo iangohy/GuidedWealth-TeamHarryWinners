@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/small_blue_gradient">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/enter_username"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/welcomeMessage"
+        android:textColor="@color/white"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/enter_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/password"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="5dp"
+
+        android:background="@drawable/btn_login"
+        android:gravity="center"
+        android:hint="Enter username" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_login"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:padding="5dp"
+        android:inputType="textPassword"/>
+
+    <ImageButton
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_round"
+        android:padding="12dp"
+        android:src="@drawable/ic_arrow"
+        app:tint="@color/white" />
+
+</RelativeLayout>
